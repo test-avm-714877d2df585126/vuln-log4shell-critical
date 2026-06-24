@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.test.vulns</groupId>
+    <artifactId>vuln-log4shell-critical</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- CVE-2021-44228 (Log4Shell) - CVSS 10.0 - EPSS 97.5% - CISA KEV -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+
+        <!-- CVE-2021-45046 (Log4j follow-up) - CVSS 9.0 - CISA KEV -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+
+        <!-- CVE-2022-22965 (Spring4Shell) - CVSS 9.8 - EPSS 97.5% - CISA KEV -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>5.3.17</version>
+        </dependency>
+
+        <!-- CVE-2022-42889 (Apache Commons Text) - CVSS 9.8 - EPSS 97.4% - CISA KEV -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-text</artifactId>
+            <version>1.9</version>
+        </dependency>
+
+        <!-- CVE-2021-26084 (Confluence OGNL Injection) - CVSS 9.8 - EPSS 97.5% - CISA KEV -->
+        <dependency>
+            <groupId>ognl</groupId>
+            <artifactId>ognl</artifactId>
+            <version>3.1.26</version>
+        </dependency>
+
+        <!-- CVE-2022-36364 (Apache Calcite Avatica) - CVSS 9.8 -->
+        <dependency>
+            <groupId>org.apache.calcite.avatica</groupId>
+            <artifactId>avatica-core</artifactId>
+            <version>1.22.0</version>
+        </dependency>
+    </dependencies>
+</project>
