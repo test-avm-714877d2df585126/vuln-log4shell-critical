@@ -41,7 +41,7 @@
         <dependency>
             <groupId>ognl</groupId>
             <artifactId>ognl</artifactId>
-            <version>3.1.26</version>
+            <version>3.4.11</version>
         </dependency>
 
         <!-- CVE-2022-36364 (Apache Calcite Avatica) - CVSS 9.8 -->
